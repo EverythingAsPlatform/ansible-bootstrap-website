@@ -1,8 +1,8 @@
 ---
 
 roles:
-  - src: git@pmichrgitlabce.lsdc.ch.pmi:DI/ansible-wsaas-deployer.git 
+  - src: https://github.com/EverythingAsPlatform/ansible-website-deployer.git 
     scm: git
-    version: origin/main
-    name: ansible-wsaas-deployer 
+    version: main
+    name: website-deployer 
 
