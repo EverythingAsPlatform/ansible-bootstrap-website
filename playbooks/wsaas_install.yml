@@ -4,8 +4,8 @@
   gather_facts: True
   #become: true
   roles:
-    - ansible-wsaas-deployer
+    - website-deployer
 
   environment:
-    http_proxy: http://10.115.48.75:3128
-    https_proxy: http://10.115.48.75:3128
+    http_proxy: xxxx
+    https_proxy: xxxx
