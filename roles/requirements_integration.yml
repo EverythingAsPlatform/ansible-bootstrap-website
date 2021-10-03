@@ -1,0 +1,8 @@
+---
+
+roles:
+  - src: git@pmichrgitlabce.lsdc.ch.pmi:DI/ansible-wsaas-deployer.git 
+    scm: git
+    version: origin/DI-7581
+    name: ansible-wsaas-deployer 
+

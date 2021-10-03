@@ -1,0 +1,11 @@
+---
+- name: wsaas deployment
+  hosts: '{{ wsaas_builder_host }}'
+  gather_facts: True
+  #become: true
+  roles:
+    - ansible-wsaas-deployer
+
+  environment:
+    http_proxy: http://10.115.48.75:3128
+    https_proxy: http://10.115.48.75:3128

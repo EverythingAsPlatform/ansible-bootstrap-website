@@ -1,0 +1,9 @@
+ansible_user: ansible
+#ansible_password: xxxx
+ansible_connection: winrm
+ansible_winrm_transport: basic
+ansible_shell_type: powershell
+ansible_winrm_scheme: http
+ansible_port: 5985
+docker_user: a-sbhattac12
+#docker_pass: xxxx
