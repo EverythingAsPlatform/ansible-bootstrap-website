@@ -1,1 +1,5 @@
-[dummy]
+[k8s_bastion]
+<linux host for k8s modules>
+
+[builder_host]
+<Windows host for building ASP.NET image>

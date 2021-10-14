@@ -1,0 +1,21 @@
+---
+- name: Create Kubernetes Namespace
+  hosts: '{{ k8s_bastion }}'
+  tasks:
+    - import_role:
+        name: website-deployer
+        tasks_from: namespace
+
+- name: Create Webserver Image
+  hosts: '{{ builder_host }}'
+  roles:
+    - website-deployer
+
+- name: Create Webserver Manifests
+  hosts: "{{ k8s_bastion }}"
+  tasks:
+    - import_role:
+        name: website-deployer
+        tasks_from: container
+
+
